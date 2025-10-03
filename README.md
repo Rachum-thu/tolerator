@@ -10,4 +10,9 @@ However, this is ***incomplete***: once a token is ***accepted***, it becomes **
 
 To address this, we propose ***Tolerator*** — a test-time **to**ken-**le**vel c**r**oss-v**a**lida**t**i**o**n **r**efinement strategy. By decoupling diffusion decoding into sequence fill-up and refinement, it allows previously fixed tokens to be revisited and corrected, yielding robust improvements on reasoning, QA, and code generation benchmarks.
 
-
+## Links
+- Installation
+- Quick Start
+- Inference Example
+- Batch Evaluation
+- Experiment Logs
