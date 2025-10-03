@@ -1,2 +1,2 @@
-# Finish First, Perfect Later: Test-Time Token-Level Cross-Validation for Diffusion Large Language Models
+# Test-Time Token-Level Cross-Validation for dLLMs
 
