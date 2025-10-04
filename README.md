@@ -14,9 +14,6 @@ To address this, we propose ***Tolerator*** — a test-time **to**ken-**le**vel 
 ## Links
 - [Installation](#installation)
 - [Quick Start](#quick-start)
-- [Inference Example](#inference-example)
-- [Batch Evaluation](#batch-evaluation)
-- [Experiment Logs](#experiment-logs)
 - [License](#license)
 
 ## Installation
@@ -46,11 +43,44 @@ export HF_TOKEN="YOUR_HF_TOKEN"
 
 ## Quick Start
 
-## Inference Example
+Navigate to the evaluation directory:
+```bash
+cd eval
+```
 
-## Batch Evaluation
+### Run Tolerator (Our Method)
 
-## Experiment Logs
+Evaluate **LLaDA-Tolerator**:
+```bash
+bash eval_llada_tolerator.sh
+```
+
+Evaluate **Dream-Tolerator**:
+```bash
+bash eval_dream_tolerator.sh
+```
+
+You can modify parameters in these scripts (e.g., `TASKS`, `LIMIT`, `STEPS`, `DENOISE_MAX_ITER`) to customize the evaluation.
+
+### Run Baselines
+
+Evaluate baseline methods for comparison:
+
+**LLaDA baselines:**
+```bash
+bash eval_llada_vanilla.sh   # Vanilla LLaDA
+bash eval_llada_rcr.sh        # LLaDA + RCR
+bash eval_llada_remdm.sh      # LLaDA + ReMDM
+```
+
+**Dream baselines:**
+```bash
+bash eval_dream_vanilla.sh    # Vanilla Dream
+bash eval_dream_rcr.sh        # Dream + RCR
+bash eval_dream_remdm.sh      # Dream + ReMDM
+```
+
+All evaluation results will be saved to the `output/` directory.
 
 ## License
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
