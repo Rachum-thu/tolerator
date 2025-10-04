@@ -1,0 +1,8 @@
+transformers==4.46.2
+torch==2.5.1
+sacrebleu
+evaluate
+sqlitedict
+accelerate
+peft
+pytablewriter

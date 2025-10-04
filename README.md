@@ -17,8 +17,32 @@ To address this, we propose ***Tolerator*** — a test-time **to**ken-**le**vel 
 - [Inference Example](#inference-example)
 - [Batch Evaluation](#batch-evaluation)
 - [Experiment Logs](#experiment-logs)
+- [License](#license)
 
 ## Installation
+
+Create a clean folder and download the anonymous code snapshot.
+```bash
+mkdir tolerator && cd tolerator
+wget https://anonymous.4open.science/api/repo/Tolerator-85C5/zip -O tolerator.zip
+unzip tolerator.zip && rm tolerator.zip
+```
+
+Create and activate a clean environment.
+```bash
+conda create -n tolerator python=3.10
+conda activate tolerator
+```
+
+Install dependencies.
+```bash
+pip install -r requirements.txt
+```
+
+Set your Hugging Face token for official model access.
+```bash
+export HF_TOKEN="YOUR_HF_TOKEN"
+```
 
 ## Quick Start
 
@@ -27,3 +51,6 @@ To address this, we propose ***Tolerator*** — a test-time **to**ken-**le**vel 
 ## Batch Evaluation
 
 ## Experiment Logs
+
+## License
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
