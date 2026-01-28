@@ -1,4 +1,4 @@
-# Fill-Then-Refine Decoding for Diffusion Large Language Models
+# Fill-and-Refine Decoding for Diffusion Large Language Models
 
 <div align="center">
   <img src="https://github.com/Rachum-thu/tolerator/blob/main/assets/overview.jpg" alt="overview" width="100%"/>
