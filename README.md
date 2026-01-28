@@ -9,7 +9,7 @@ It is often claimed that vanilla discrete diffusion language models have an ***i
 
 However, this is ***incomplete***: once a token is ***accepted***, it becomes ***fixed*** and cannot be revised. Models like [LLaDA](https://arxiv.org/abs/2502.09992) and [Dream](https://arxiv.org/abs/2508.15487) leave early mistakes to ***persist*** and ***propagate*** through later steps.
 
-To address this, we propose ***FiRe*** — a *Fi*ll-then-*Re*fine strategy (Tolerator is the former name). By decoupling diffusion decoding into sequence fill-up and refinement, it allows previously fixed tokens to be revisited and corrected, yielding robust improvements on reasoning, QA, and code generation benchmarks.
+To address this, we propose ***FiRe*** — a **Fi**ll-then-**Re**fine strategy (Tolerator is the former name). By decoupling diffusion decoding into sequence fill-up and refinement, it allows previously fixed tokens to be revisited and corrected, yielding robust improvements on reasoning, QA, and code generation benchmarks.
 
 ## Links
 - [Installation](#installation)
